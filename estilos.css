@@ -1,0 +1,79 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.gallery-container{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /*Filas y columnas*/
+    grid-auto-rows: 200px;
+    padding: 20px; /*Margen*/
+    grid-gap: 10px;
+}
+
+.gallery__item{
+    text-align: center;
+    position: relative;
+}
+
+.gallery__img{
+    width: 100%; /*Ancho*/
+    height: 100%; /*Alto*/
+    object-fit:fill;
+}
+
+.gallery__title{
+    font-size: 20px;
+    position: absolute;
+    bottom: 0;
+    color: white;
+    background: linear-gradient(rgba(255,255,255,0),rgba(0,0,0,1));
+    width: 100%;
+    margin: 0;
+    padding: 0px;
+}
+
+/************ 
+//-------------------------------
+// CABECERA
+//-------------------------------
+************/
+#main-header {
+	background: #333;
+	color: white;
+	height: 80px;
+	
+	width: 100%;
+	left: 0;
+	top: 0;
+	position:absolute;
+}	
+	#main-header a {
+		color: white;
+	}
+	
+	
+/*
+ * Logo
+ */
+#logo-header {
+	float: left;
+	padding: 15px 0 0 30px;
+}
+	#logo-header .site-name {
+		display: block;
+		font-weight: 700;
+		font-size: 1.4em;
+	}
+
+    #logo-header .site-desc {
+		display: block;
+		font-weight: 300;
+		font-size: 0.8em;
+		color: #999;
+	}
+
+.logo-img {
+    width: 40px;
+    padding: 15px 0 0 30px;
+    float: left;
+}
